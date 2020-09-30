@@ -1,12 +1,35 @@
-import React from 'react'
+import React from 'react';
+import BreadCrumb from './Components/BreadCrumb';
+import ImageContentHorizontal from './Components/ImageContentHorizontal';
+import ImageContentVertical from './Components/ImageContentVertical';
+import TeamCard from './Components/TeamCard';
 
 const About = () => {
     return (
-        <div>
-            <div className="container">
-                <h1>About Page</h1>
-            </div>
-        </div>
+        <>
+         <BreadCrumb/>
+         <ImageContentHorizontal/>
+         <section className="section3">
+             <div className="container">
+                <h2>Our Team Section</h2>
+                 <div className="row">
+                     <div className="column three">
+                         <TeamCard/>
+                     </div>
+                     <div className="column three">
+                         <TeamCard/>
+                     </div>
+                     <div className="column three">
+                         <TeamCard/>
+                     </div>
+                     <div className="column three">
+                         <TeamCard/>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         <ImageContentVertical/>
+        </>
     )
 }
 
