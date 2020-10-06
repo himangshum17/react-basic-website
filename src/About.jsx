@@ -7,7 +7,7 @@ import TeamCard from './Components/TeamCard';
 const About = () => {
     return (
         <>
-         <BreadCrumb/>
+         <BreadCrumb activeLink={"About Us"} tiTle={"About Us"}/>
          <ImageContentHorizontal/>
          <section className="section3">
              <div className="container">

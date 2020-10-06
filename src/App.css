@@ -21,6 +21,7 @@ font-weight: 600;border-radius: 8px;transition : all .4s ease-in-out;}
 @media(min-width:1200px){
   .column.half{flex: 0 0 50%;}
   .column.three{flex: 0 0 25%;}
+  .column.four{flex: 0 0 33.3%;}
   .column.eight{flex: 0 0 66.666667%;}
   .column.ten{flex: 0 0 83.333333%;}
 }
@@ -103,3 +104,14 @@ footer .footer-inner .footer-text{margin: 0;}
 .card .content-area ul li{padding: 0 4px;}
 .card .content-area ul li a{display: flex;justify-content: center;align-items: center;width: 40px;height: 40px;border-radius: 4px;background-color: #c4c4c4;}
 /* card */
+/* section4 */
+.section4{padding: 128px 0 0;}
+.section4 h2{font-size: 40px; line-height: 48px;margin: 0 0 56px;font-weight: 300;}
+/* section4 */
+/* service */
+.service{display: flex;flex-direction: column;margin-bottom: 56px;}
+.service .icon-area{width: 64px;height: 64px;border-radius: 8px;background-color: #c4c4c4;display: flex;align-items: center;justify-content: center;}
+.service .content h3{font-size: 24px;font-weight: 400;}
+.service .content a{font-weight: 700;display: flex;align-items: center;color: #000000;font-size: 14px;}
+.service .content a::after{position: relative;content: "";width: 16px;height: 2px;background-color: #000000;margin-left: 8px;}
+/* service */

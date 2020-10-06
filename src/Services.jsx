@@ -1,12 +1,46 @@
-import React from 'react'
+import React from 'react';
+import BreadCrumb from './Components/BreadCrumb';
+import Service from './Components/Service';
 
 const Services = () => {
     return (
-        <div>
+        <>
+        <BreadCrumb activeLink={"Services"} tiTle={"Services"}/>
+        <section className="section4">
             <div className="container">
-                <h1>Services Page</h1>
+            <h2>Services that we provide</h2>
+                <div className="row">
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                  <div className="column four">
+                    <Service/>
+                  </div>
+                </div>
             </div>
-        </div>
+        </section>
+        </>
     )
 }
 
