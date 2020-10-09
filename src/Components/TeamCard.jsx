@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img from '../assets/images/img2.svg';
 
 const TeamCard = () => {
@@ -12,10 +12,10 @@ const TeamCard = () => {
                 <h3>John Doe</h3>
                 <p>Designation</p>
                 <ul>
-                    <li><NavLink exact to="/"></NavLink></li>
-                    <li><NavLink exact to="/"></NavLink></li>
-                    <li><NavLink exact to="/"></NavLink></li>
-                    <li><NavLink exact to="/"></NavLink></li>
+                    <li><Link to="/"></Link></li>
+                    <li><Link to="/"></Link></li>
+                    <li><Link to="/"></Link></li>
+                    <li><Link to="/"></Link></li>
                 </ul>
             </div>
         </div>

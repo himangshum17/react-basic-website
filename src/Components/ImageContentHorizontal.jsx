@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img from '../assets/images/img2.svg';
 
 const ImageContentHorizontal = () => {
@@ -18,7 +18,7 @@ const ImageContentHorizontal = () => {
                             <p>Fanny pack hexagon artisan, live-edge seitan poutine franzen deep v mixtape tbh.
                             Enamel pin plaid quinoa stumptown austin, swag iPhone. Salvia franzen knausgaard, 
                             fam banh mi farm-to-table wayfarers chia.</p>
-                            <NavLink exact to="/services" className="btn">Get Started</NavLink>
+                            <Link to="/services" className="btn">Get Started</Link>
                       </div>
                   </div>
               </div>

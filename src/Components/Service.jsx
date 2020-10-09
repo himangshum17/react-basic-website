@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import img from '../assets/images/clipboard.svg';
 
 const Service = () => {
@@ -11,7 +11,7 @@ const Service = () => {
             <div className="content">
                 <h3>Service Title</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nemo saepe obcaecati aut ipsum unde architecto?</p>
-                <NavLink exact to="">View details</NavLink>
+                <Link to="">View details</Link>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,14 +9,14 @@ const Footer = () => {
                     <div className="ten column m-auto">
                         <div className="footer-inner">
                             <div className="logo">
-                                <NavLink exact to="/" className="footer-logo">Demo Logo</NavLink>
+                                <Link to="/" className="footer-logo">Demo Logo</Link>
                             </div>
                             <div className="links">
                                 <ul>
-                                    <li><NavLink exact to="/" className="footer-link">Home</NavLink></li>
-                                    <li><NavLink exact to="/about" className="footer-link">About</NavLink></li>
-                                    <li><NavLink exact to="/services" className="footer-link">Services</NavLink></li>
-                                    <li><NavLink exact to="/contact" className="footer-link">Contact</NavLink></li>
+                                    <li><Link to="/" className="footer-link">Home</Link></li>
+                                    <li><Link to="/about" className="footer-link">About</Link></li>
+                                    <li><Link to="/services" className="footer-link">Services</Link></li>
+                                    <li><Link to="/contact" className="footer-link">Contact</Link></li>
                                 </ul>
                             </div>
                             <p className="footer-text">2020 React Basic Website</p>
