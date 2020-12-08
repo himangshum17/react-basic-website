@@ -7,7 +7,7 @@ a{text-decoration: none;}
 ul{padding: 0;list-style-type: none;margin: 0;}
 img{vertical-align: middle;max-width: 100%;}
 .btn{display: inline-block;padding: 1.2rem 2.4rem;background-color: #090530;color: #ffffff;text-transform: uppercase;letter-spacing: 1.6px;
-font-weight: 600;border-radius: 8px;transition : all .4s ease-in-out;border: none;}
+font-weight: 600;border-radius: 8px;transition : all .4s ease-in-out;border: none;font-size: 16px;}
 .btn:hover{transform: translateY(-8px);background-color: coral;}
 button{cursor: pointer;}
 button:focus{outline: none;}
@@ -20,7 +20,7 @@ button:focus{outline: none;}
 .container{padding: 0 16px;width: 100%;}
 /* container */
 /* column */
-@media(min-width:1200px){
+@media(min-width:992px){
   .column.half{flex: 0 0 50%;}
   .column.three{flex: 0 0 25%;}
   .column.four{flex: 0 0 33.3%;}
@@ -31,13 +31,14 @@ button:focus{outline: none;}
 /* column */
 /* header */
 header{padding: 16px 0;}
-header nav{display: flex;justify-content: space-between;align-items: center;}
+header nav{display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: relative;}
 header nav .nav-logo{font-weight: 700;font-size: 24px;color: #090530;}
 header nav .links ul{display: flex;margin: 0 -16px;}
 header nav .links ul li{padding: 0 16px;}
 header nav .links ul li a{font-weight: 600;font-size: 16px;color: #090530;border-bottom: 2px solid transparent;transition : all .4s ease-in-out;padding-bottom: 4px;}
 header nav .links ul li a:hover{color: coral;}
 header nav .links ul li a.active{border-color: coral;}
+header nav .hamburger{padding: 0;border: none;background: transparent;margin-left: 16px;display: none;order: 3;}
 /* header */
 /* section 1 */
 .section1{padding:128px 0;text-align: center;}
@@ -47,7 +48,7 @@ header nav .links ul li a.active{border-color: coral;}
 .section1 .content .btn{margin: 40px 0 0;}
 /* section 1 */
 /* section 2 */
-.section2 ul{display: flex;margin: 0 -12px;justify-content: center;}
+.section2 ul{display: flex;margin: 0 -12px;justify-content: center;flex-wrap: wrap;}
 .section2 ul li{padding: 0 12px;}
 /* section 2 */
 /* img-content-horizontal */
@@ -124,3 +125,38 @@ footer .footer-inner .footer-text{margin: 0;}
 .section5 .section5-inner .form-group input{border: none;background-color: #c4c4c4;border-radius: 8px;height: 56px;padding: 6px 12px;}
 .section5 .section5-inner .form-group textarea{border: none;background-color: #c4c4c4;border-radius: 8px;padding: 6px 12px;resize: none;}
 /* section5 */
+/* responsive */
+@media (max-width:991px){
+  .column + .column{margin-top: 24px;}
+  .btn{font-size: 14px;padding: .8rem 1.6rem;}
+  header nav .logo{flex: 1;}
+  header nav .links{display: none;width: 100%;order: 4;position: absolute;top: calc(100% + 8px);padding: 16px;background-color: #090530;border-radius: 8px;}
+  header nav .links.show{display: block;}
+  header nav .links ul{flex-direction: column;}
+  header nav .links ul li{padding: 8px 16px;}
+  header nav .links ul li a{color: #ffffff;}
+  header nav .hamburger{display: block;}
+  .section1 .content h1{font-size: 40px;font-weight:600;}
+  .img-content-horizontal .content-area h2{font-size: 32px;margin-top: 24px;font-weight:600;}
+  .section3 h2{font-size: 32px;font-weight:600;}
+  .section4 h2{font-size: 32px;font-weight:600;}
+  .img-content-vertical .content-area h3{font-size: 32px;font-weight:600;}
+  .section2 ul{margin: -12px -12px 0;}
+  .section2 ul li{flex: 0 0 33.3%;margin: 12px 0 0;text-align: center;}
+  footer .footer-inner{flex-direction: column;align-items: flex-start;}
+  footer .footer-inner .links{margin: 24px 0;}
+}
+@media (max-width:767px){
+  .section1 .content h1{font-size: 32px;}
+  .img-content-horizontal .content-area h2{font-size: 24px;}
+  .section3 h2{font-size: 24px;}
+  .section4 h2{font-size: 24px;}
+  .img-content-vertical .content-area h3{font-size: 24px;}
+  .section2 ul li{flex: 0 0 50%;}
+}
+@media (max-width:575px){
+  footer .footer-inner .links ul{margin: 0 -8px;}
+  footer .footer-inner .links ul li{padding: 0 8px;}
+  footer .footer-inner .links ul li a{font-size: 14px;}
+}
+/* responsive */
